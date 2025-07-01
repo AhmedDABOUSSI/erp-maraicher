@@ -1,0 +1,23 @@
+<h2>Liste des parcelles</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Dimensions</th>
+      <th>Nombre de bandes</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of parcelles">
+      <td>{{ p.nom }}</td>
+      <td>{{ p.longueur }}m x {{ p.largeur }}m</td>
+      <td>{{ p.nbBandes }}</td>
+      <td>
+        <button (click)="selectParcelle(p.id)">Afficher les bandes</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<app-bande-list [bandes]="bandes"></app-bande-list>

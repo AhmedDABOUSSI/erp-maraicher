@@ -1,0 +1,9 @@
+<div *ngIf="bandes.length">
+    <h3>Bandes</h3>
+    <ul>
+      <li *ngFor="let b of bandes">
+        Bande #{{ b.numero }} – {{ b.longueur }}m x {{ b.largeur }}m
+      </li>
+    </ul>
+  </div>
+  
