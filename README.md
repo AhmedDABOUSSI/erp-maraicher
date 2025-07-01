@@ -72,7 +72,7 @@ npm install
 #### Lancement du frontend
 
 ```bash
-npm run dev
+ng serve
 ```
 
 Interface accessible sur `http://localhost:4200`
